@@ -1,54 +1,70 @@
 <div class="my-container">
-    <div class="bounds">
-        <div class = "content"
-        fxLayout = "column"
-        fxFlexFill>
-            <div fxFlex="20" ></div>
-            <div fxFlexFill fxFlex="50"> </div>
-                <div fxFlex="10" fxLayoutAlign="space-around center" style = "font-size: 35px; color: white;"> Login </div>
-                <div fxFlex="90" fxLayoutAlign="space-around center">
-                <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px" style = " background-color: white; width: 80%; margin-top: 10px;"> 
-                    <div class = "logo" ><img src = "../../assets/avion-logo.png"> </div>                   
-                    <form [formGroup]="loginForm" class="example-form" >
-                       <div fxLayout="column" fxLayoutAlign="space-around center" fxFlexFill >
-                        <div class = "form-input" style = "width: 90%;">                            
-                            <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Username"
-                            formControlName="username">
-                            <!-- <mat-hint>Please enter your name.</mat-hint> -->
-                            <mat-error>Missing username.</mat-error>
-                            </mat-form-field>
+        <div class="bounds">
+            <div class = "content"
+            fxLayout = "column"
+            fxFlexFill>
+                <div fxFlex="20" ></div>
+                
+                    <div fxFlex="10" fxLayoutAlign="space-around center" style = "font-size: 35px; color: white;"> Login </div>
+
+                    <div fxFlex="90" fxLayoutAlign="space-around center">
+
+                        <div fxLayout="column" fxLayoutAlign="space-around center" fxFlex="40" fxFlex.xs="90" style = "background-color: white;  margin-top: 10px;"> 
+
+                        <div class = "logo" ><img src = "../../assets/avion-logo.png"> </div> 
+
+                        <form [formGroup]="loginForm" class="example-form" >
+                           <div fxLayout="column" fxLayoutAlign="space-around center" fxFlexFill >
+
+                            <div class = "form-input" style = "width: 90%;">                            
+                                <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Username"
+                                formControlName="username">
+                                <!-- <mat-hint>Please enter your name.</mat-hint> -->
+                                <mat-error>Missing username.</mat-error>
+                                </mat-form-field>
+                            </div>
+
+                            <div class = "form-input" style = "width: 90%;">                            
+                                <mat-form-field class="example-full-width">
+                                <input matInput 
+                                type="password"
+                                placeholder="Password"
+                                formControlName="password">
+                                <!-- <mat-hint>Please enter your password.</mat-hint> -->
+                                <mat-error>Missing password.</mat-error>
+                                </mat-form-field>
+                            </div>   
+
+                           </div> 
+
+                           <div class = "form-input" style = "border-style: none"> 
+                              <mat-checkbox>Remember Login</mat-checkbox>
+                           </div>
+
+                           <div class = "form-input" style = "border-style: none; padding-bottom: 10px;">                         
+                            <button mat-raised-button  style = " width: 100%; background-color: #39A5F1; color: white; text-transform: uppercase; height: 68px;">sign in</button>
+                           </div>  
+
+                        </form>   
+
                         </div>
-                        <div class = "form-input" style = "width: 90%;">                            
-                            <mat-form-field class="example-full-width">
-                            <input matInput 
-                            type="password"
-                            placeholder="Password"
-                            formControlName="password">
-                            <!-- <mat-hint>Please enter your password.</mat-hint> -->
-                            <mat-error>Missing password.</mat-error>
-                            </mat-form-field>
-                        </div>                            
-                       </div> 
-                       <div class = "form-input" style = "border-style: none"> 
-                          <mat-checkbox>Remember Login</mat-checkbox>
-                       </div>
-                       <div class = "form-input" style = "border-style: none; padding-bottom: 10px;">                         
-                        <button mat-raised-button  style = " width: 100%; background-color: #39A5F1; color: white; text-transform: uppercase; height: 68px;">sign in</button>
-                       </div>                          
-                    </form>     
-                </div>
-                </div>
-            
+                    
+                    </div>                
+    
+                    <div fxFlex="10"  fxLayout="column" fxLayoutAlign="space-between center" >                                            
+                        <div fxLayout="row" fxLayoutAlign="space-between center" style = "background-color: red;  margin-top: 10px;" >
+                        <div style = "color: white; font-size: 14px;" ><a href="">Forgot your password?</a></div>
+                        <div style = "color: white; font-size: 14px;" >Don't have an account?<a href="" style = "margin-left: 10px;">SIGN UP</a></div>
+                        </div>
+                    </div> 
 
-            <div fxFlex="10"  fxLayout="column" fxLayoutAlign="space-around center" >            
-                <div fxLayout="row" fxLayoutAlign="space-between center" style = " width: 80%; margin-top: 20px;" >
-                <div style = "color: white; font-size: 14px;" ><a href="">Forgot your password?</a></div>
-                <div style = "color: white; font-size: 14px;" >Don't have an account?<a href="" style = "margin-left: 10px;">SIGN UP</a></div>
-                </div>
-            <div fxFlex="20" ></div>  
-            </div>         
-        </div>
-    </div>    
-</div>
 
+
+                <div fxFlex="20" ></div>  
+                
+                
+                
+            </div>
+        </div>    
+    </div>
