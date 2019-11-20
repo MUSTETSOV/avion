@@ -4,8 +4,9 @@ import * as Material from '@angular/material';
 const MaterialComponents = [
   Material.MatButtonModule,
   Material.MatInputModule,
-  Material.MatFormFieldModule, 
-  Material.MatButtonModule
+  Material.MatFormFieldModule,
+  Material.MatButtonModule,
+  Material.MatCheckboxModule
 
 
 

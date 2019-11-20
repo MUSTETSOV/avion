@@ -23,3 +23,16 @@
   .example-full-width {
     width: 100%;
   }
+.form-input {
+    border-style: solid;
+    border-color: rgba(46,46,46,0.10);
+    border-block-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+  
+.mat-checkbox mat-accent 
+.mat-checkbox-checked {
+    background-color: aqua !important;
+}
