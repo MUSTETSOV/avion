@@ -3,11 +3,11 @@
         <div class = "content"
         fxLayout = "column"
         fxFlexFill>
-            <div fxFlex="10" ></div>
-            <div fxFlexFill fxFlex="60"></div>
+            <div fxFlex="20" ></div>
+            <div fxFlexFill fxFlex="50"> </div>
                 <div fxFlex="10" fxLayoutAlign="space-around center" style = "font-size: 35px; color: white;"> Login </div>
                 <div fxFlex="90" fxLayoutAlign="space-around center">
-                <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="40px" style = " background-color: white; width: 80%; margin-top: 10px;"> 
+                <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px" style = " background-color: white; width: 80%; margin-top: 10px;"> 
                     <div class = "logo" ><img src = "../../assets/avion-logo.png"> </div>                   
                     <form [formGroup]="loginForm" class="example-form" >
                        <div fxLayout="column" fxLayoutAlign="space-around center" fxFlexFill >
@@ -38,8 +38,16 @@
                        </div>                          
                     </form>     
                 </div>
-            </div>
-            <div fxFlex="30" ></div>           
+                </div>
+            
+
+            <div fxFlex="10"  fxLayout="column" fxLayoutAlign="space-around center" >            
+                <div fxLayout="row" fxLayoutAlign="space-between center" style = " width: 80%; margin-top: 20px;" >
+                <div style = "color: white; font-size: 14px;" ><a href="">Forgot your password?</a></div>
+                <div style = "color: white; font-size: 14px;" >Don't have an account?<a href="" style = "margin-left: 10px;">SIGN UP</a></div>
+                </div>
+            <div fxFlex="20" ></div>  
+            </div>         
         </div>
     </div>    
 </div>
