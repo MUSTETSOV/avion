@@ -1,0 +1,53 @@
+
+<div class="my-container">
+    <div class="bounds">
+        <div class = "content"
+        fxLayout = "column"
+        fxFlexFill>
+            <div fxFlex="10" ></div>
+            <div fxFlexFill fxFlex="60"></div>
+                <div fxFlex="10" fxLayoutAlign="space-around center" style = "font-size: 35px; color: white;"> Login </div>
+                <div fxFlex="90" fxLayoutAlign="space-around center">
+                <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="40px" style = " background-color: white; width: 80%;"> 
+                    <div class = "logo" ><img src = "../../assets/avion-logo.png"> </div>
+                    <form class="example-form"
+                    [formGroup]="loginForm" >
+                            <mat-form-field class="example-full-width" style = "border-width:1px ; border-radius: 3px; border-style: solid;" >
+                              <input matInput placeholder="Email" [formControl]="emailFormControl"
+                                     [errorStateMatcher]="matcher">
+                              <mat-hint>Errors appear instantly!</mat-hint>
+                              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                Please enter a valid email address
+                              </mat-error>
+                              <mat-error *ngIf="emailFormControl.hasError('required')">
+                                Email is <strong>required</strong>
+                              </mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                    <input
+                                      type="password"
+                                      matInput
+                                      placeholder="Your password"
+                                      formControlName="password">
+                                    <mat-hint>Please enter your password.</mat-hint>
+                                    <mat-error>Missing password.</mat-error>
+                                  </mat-form-field>
+
+
+                          </form>
+                          <div >Test</div>
+                           <button mat-button color="primary" type="submit">Primary</button>
+                          
+                    <button >Sign in</button>
+                    <button >Sign in</button>
+                </div>
+            </div>
+            <div fxFlex="30" ></div>
+           
+        </div>
+    </div>    
+</div>
+
+<!-- fxFlex.xs="55" -->
+
